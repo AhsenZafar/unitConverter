@@ -4,9 +4,9 @@ const mtf = document.getElementById("mtf")
 
 convert.addEventListener("click",function(){
     const input = inputEl.value
-     const mToF= input.value*3.281
-     const ftoM = input.value/3.281
-     mtf.innerHTML ='${inputEl.value}'
+    const mToF= input*3.281.toFixed(3)
+    const ftoM = input/3.281.toFixed(3)
+     mtf.innerHTML =`${input} meters = ${mToF} feet | ${input} feet = ${ftoM} meters`
 })
 
 
